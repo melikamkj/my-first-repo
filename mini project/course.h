@@ -12,7 +12,7 @@ private:
     int capacity;
 
 public:
-    Course(string uname, string pass);
+    Course(string id, string n, int cap);
     void addStudent();
     void assignGrade();
     void displayCourseInfo();

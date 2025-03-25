@@ -11,6 +11,10 @@ public:
     Admin(string uname, string pass);
     void displayRole() override;
     void manageUsers();
+    void addUser();
+    void addCourse();
+    void displayUsers();
+    void displayCourse();
     void deleteUser();
 };
 
