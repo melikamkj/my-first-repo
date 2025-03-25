@@ -2,12 +2,18 @@
 #define PROFESSOR_H
 
 #include<iostream>
+#include"user.h"
 using namespace std;
 
-class Proffesor
+class Proffesor : public User
 {
-private:
 public:
+    Proffesor(string uname, string pass);
+    void displayRole() override;
+    void createCourse();
+    void assignGrade();
+    void createAnnouncement();
+    void deleteCourse();
 };
 
 #endif

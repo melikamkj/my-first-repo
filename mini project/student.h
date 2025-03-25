@@ -2,12 +2,17 @@
 #define STUDENT_H
 
 #include<iostream>
+#include"user.h"
 using namespace std;
 
-class Student
+class Student : public User
 {
-private:
 public:
+    Student(string uname, string pass);
+    void displayRole() override;
+    void enrollCourse();
+    void viewGrades();
+    void submitAssignment();
 };
 
 #endif

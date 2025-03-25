@@ -8,6 +8,10 @@ using namespace std;
 class Admin : public User
 {
 public:
+    Admin(string uname, string pass);
+    void displayRole() override;
+    void manageUsers();
+    void deleteUser();
 };
 
 #endif
